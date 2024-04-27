@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Poppins";
+        font-size: 22px;
+      }
+    </style>
+    <title>TODO LIST</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>To DO List</h1>
+        <div style="display: flex">
+          <input type="text" placeholder="write here...." id="inputbx" />
+          <button
+            id="btn"
+            style="
+              color: antiquewhite;
+              margin-left: 10px;
+              padding-left: 20px;
+              padding-right: 20px;
+              font-size: 17px;
+              border-radius: 20px;
+              background-color: rgb(240, 43, 112);
+              border: 1px solid rgb(240, 43, 112);
+            "
+          >
+            Add
+          </button>
+        </div>
+        <ul id="list"></ul>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

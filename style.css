@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #78899b;
+}
+
+.box {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border-radius: 30px 50px;
+  background: #2f363e;
+  padding: 30px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.25),
+    inset -5px -5px -10px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+#inputbx {
+  position: relative;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.box li i::before {
+  margin-top: 14px;
+  margin-left: 8px;
+  right: 7%;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background: white;
+  transform: rotate(45deg);
+}
+
+.box li i::after {
+  margin-top: 14px;
+  margin-left: 8px;
+  right: 7%;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: white;
+  transform: rotate(-45deg);
+}
+
+.box li::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  width: 35px;
+  height: 35px;
+  background: rgb(240, 43, 112);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.box li.done {
+  text-decoration: line-through;
+}
+.box li.done:after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  width: 13px;
+  height: 6px;
+  margin-top: 10px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(315deg);
+  text-decoration: line-through;
+}
+
+#list {
+  position: relative;
+  margin-top: 20px;
+  height: 350px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+.inptbux {
+  color: #fff;
+  padding-left: 55px;
+}
+
+.icon {
+  text-decoration: none;
+  padding-left: 210px;
+  color: black;
+  font-size: 25px;
+}
